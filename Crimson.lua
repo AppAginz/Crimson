@@ -31,7 +31,7 @@ local Section = Tab:CreateSection("Farm")
 
 local Keybind = Tab:CreateKeybind({
       Name = "Worthiness & Rib",
-   Keybind:Set("RightCtrl") -- Keybind (string)
+   CurrentKeybind = "0",
    HoldToInteract = false,
    Flag = "WorthRib", 
    Callback = function(Keybind)
