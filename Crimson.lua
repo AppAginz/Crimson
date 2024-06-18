@@ -30,7 +30,8 @@ local Tab = Window:CreateTab("MANUAL FARM", 4483362458) -- Title, Image
 local Section = Tab:CreateSection("Farm")
 
 local Keybind = Tab:CreateKeybind({
-   Name = "Worthiness & Rib",
+   Keybind:Set("0") -- Keybind (string)
+      Name = "Worthiness & Rib",
    CurrentKeybind = "0",
    HoldToInteract = false,
    Flag = "Keybind1", 
