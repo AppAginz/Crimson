@@ -30,11 +30,10 @@ local Tab = Window:CreateTab("MANUAL FARM", 4483362458) -- Title, Image
 local Section = Tab:CreateSection("Farm")
 
 local Keybind = Tab:CreateKeybind({
-   Keybind:Set("0") -- Keybind (string)
       Name = "Worthiness & Rib",
-   CurrentKeybind = "0",
+   Keybind:Set("RightCtrl") -- Keybind (string)
    HoldToInteract = false,
-   Flag = "Keybind1", 
+   Flag = "WorthRib", 
    Callback = function(Keybind)
 local args = {
     [1] = "LearnSkill",
