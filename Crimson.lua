@@ -44,16 +44,18 @@ local args = {
 }
 
 game:GetService("Players").LocalPlayer.Character.RemoteFunction:InvokeServer(unpack(args))
-wait(0.5)
+
+         wait(1)
 
 local args = {
-    [1] = "LearnSkill",
+    [1] = "EndDialogue",
     [2] = {
-        ["Skill"] = "Worthiness V",
-        ["SkillTreeType"] = "Character"
+        ["Option"] = "Option1",
+        ["Dialogue"] = "Dialogue2",
+        ["NPC"] = "Rib Cage of The Saint's Corpse"
     }
 }
 
-game:GetService("Players").LocalPlayer.Character.RemoteFunction:InvokeServer(unpack(args))
+game:GetService("Players").LocalPlayer.Character.RemoteEvent:FireServer(unpack(args))
    end,
 })
