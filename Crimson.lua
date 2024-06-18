@@ -30,7 +30,7 @@ local Tab = Window:CreateTab("MANUAL FARM", 4483362458) -- Title, Image
 local Section = Tab:CreateSection("Farm")
 
 local Keybind = Tab:CreateKeybind({
-   Name = "Worthiness",
+   Name = "Worthiness & Rib",
    CurrentKeybind = "-",
    HoldToInteract = false,
    Flag = "Keybind1", 
@@ -44,7 +44,7 @@ local args = {
 }
 
 game:GetService("Players").LocalPlayer.Character.RemoteFunction:InvokeServer(unpack(args))
-wait(0,5)
+wait(0.5)
 
 local args = {
     [1] = "LearnSkill",
